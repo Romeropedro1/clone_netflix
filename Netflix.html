@@ -1,0 +1,146 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo with red text on a black background" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/7UaZvmfW0BzBXCqem7fZkBPDJBg3KxWPRzGgwbN8F9HkeGhPB.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="hover:text-gray-400" href="#">
+      Home
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      TV Shows
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      Movies
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      New &amp; Popular
+     </a>
+     <a class="hover:text-gray-400" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search hover:text-gray-400 cursor-pointer">
+    </i>
+    <i class="fas fa-bell hover:text-gray-400 cursor-pointer">
+    </i>
+    <img alt="User profile icon with a generic user silhouette" class="h-8 w-8 rounded" height="32" src="https://storage.googleapis.com/a1aa/image/50Pt10OG8za2FZ55ehVV5F944UtaMyYxCkvipyxg5PTr3I8JA.jpg" width="32"/>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="pt-16">
+   <!-- Hero Section -->
+   <section class="relative">
+    <img alt="Hero image with a dramatic scene from a popular show or movie" class="w-full h-96 object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/fuFcyiUXnJ2XKiLlgxRRP7qTuQzNiUG5tqenNm6BpFdlvR4TA.jpg" width="1920"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent">
+    </div>
+    <div class="absolute bottom-8 left-8">
+     <h1 class="text-4xl md:text-6xl font-bold">
+      Popular Show
+     </h1>
+     <p class="mt-2 text-lg md:text-xl">
+      Watch the latest episodes now
+     </p>
+     <div class="mt-4">
+      <button class="bg-white text-black px-4 py-2 rounded-md font-semibold mr-2">
+       <i class="fas fa-play">
+       </i>
+       Play
+      </button>
+      <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded-md font-semibold">
+       <i class="fas fa-info-circle">
+       </i>
+       More Info
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Rows of Movies/Shows -->
+   <section class="mt-8 px-4 md:px-8">
+    <!-- Row 1 -->
+    <div class="mb-8">
+     <h2 class="text-2xl font-semibold mb-4">
+      Trending Now
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Thumbnail of Movie 1 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/bffVaPj7dvi5IUtxmoBFUBdSscPY3aEIJ4TzPGg89nyRvR4TA.jpg" width="300"/>
+      <img alt="Thumbnail of Movie 2 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/yX6M3zgdzeVREK03E68j2meysiTEJseOu98OLB5LNYixeGhPB.jpg" width="300"/>
+      <img alt="Thumbnail of Movie 3 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/WEfthgZPR1xRLKsz30VtzsTscLeje5jV3ZezEPMoBvnp9GhPB.jpg" width="300"/>
+      <img alt="Thumbnail of Movie 4 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/z0LuQUy52v5UPNgSu3NI1P0vh0yYhYg2aNQ7v8saTO12bEeJA.jpg" width="300"/>
+      <img alt="Thumbnail of Movie 5 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/GfbWSqjyyY1SAiHk5TyDJPLAii1LMcVRtZXNMMHZqfDeeGhPB.jpg" width="300"/>
+     </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="mb-8">
+     <h2 class="text-2xl font-semibold mb-4">
+      Top Picks for You
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Thumbnail of Show 1 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/uSiV8DVvlxY2AxeyMicqlE3iJFmjex7W5VzMfgp7vKuGfGhPB.jpg" width="300"/>
+      <img alt="Thumbnail of Show 2 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/4rk76VnCIH75IVBnX04fTM3fKaCL9cBksmpOYVhRMaTUvR4TA.jpg" width="300"/>
+      <img alt="Thumbnail of Show 3 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/sFfl7o9JeYpuJkxIRwyAn2ocNQk3DGORWLY3iiHfkf968GhPB.jpg" width="300"/>
+      <img alt="Thumbnail of Show 4 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/vm55VjdKHe2oPSt9rtXbtVslRt0KOgbVp2qoe3Adqz2cvR4TA.jpg" width="300"/>
+      <img alt="Thumbnail of Show 5 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/OyZSqqqeCH1DCioGQKxt95RBYYIqyUqKBi62THCMSK7n3I8JA.jpg" width="300"/>
+     </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="mb-8">
+     <h2 class="text-2xl font-semibold mb-4">
+      New Releases
+     </h2>
+     <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+      <img alt="Thumbnail of New Release 1 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/aJKLPUOBBDrIMVJEzMKrbH9xTMt6hyv8QkIFt9UwA853bEeJA.jpg" width="300"/>
+      <img alt="Thumbnail of New Release 2 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/JqpsxbR0hFJCApTBhLjSuYLZ2yKzGeffeY6a3mGYpO3BeNCfE.jpg" width="300"/>
+      <img alt="Thumbnail of New Release 3 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/VO1uMN5xFI6cJxdweeKZhDxB2jN0TAhrHk6XvSdHARYnvR4TA.jpg" width="300"/>
+      <img alt="Thumbnail of New Release 4 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/Ne0A2vZnrdyaV6qtU9I1mZkcskBABOuwCtmJypcPiw0r3I8JA.jpg" width="300"/>
+      <img alt="Thumbnail of New Release 5 with a dramatic scene" class="w-48 h-32 object-cover rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/NZpwVR8ZW7qtIxNTdsz4xzq0uf5QOcKxzfPmyHmQFqKivR4TA.jpg" width="300"/>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 p-4 mt-8">
+   <div class="flex justify-center space-x-4">
+    <a class="hover:text-gray-400" href="#">
+     Home
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     TV Shows
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     Movies
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     New &amp; Popular
+    </a>
+    <a class="hover:text-gray-400" href="#">
+     My List
+    </a>
+   </div>
+   <div class="text-center mt-4">
+    <p class="text-gray-500">
+     © 2023 Netflix Clone. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
