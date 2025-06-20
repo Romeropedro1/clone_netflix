@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ pokemon?.name | titlecase }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="pokemon">
+    <ion-img [src]="pokemon.sprites.front_default" [alt]="pokemon.name"></ion-img>
+
+    <ion-card-header>
+      <ion-card-title>{{ pokemon.name | titlecase }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Height</ion-label>
+          <ion-note slot="end">{{ pokemon.height }}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Weight</ion-label>
+          <ion-note slot="end">{{ pokemon.weight }}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Base Experience</ion-label>
+          <ion-note slot="end">{{ pokemon.base_experience }}</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
